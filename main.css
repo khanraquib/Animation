@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+.sky{
+    /* width: 100%; */
+    height: 40%;
+    /* box-sizing: border-box; */
+    background-color: skyblue;
+    /* position: relative; */
+    
+}
+.grass{
+    height: 20%;
+    background-color: rgba(0, 24, 0, 0.849);
+}
+.road{
+    height: 40%;
+    background-color: grey;
+    border-top: 10px solid darkgrey;
+    border-bottom: 10px solid darkgrey;
+}
+.lines{
+     box-sizing: border-box;
+     position: absolute;
+     border: 2px dashed yellow;
+     height: 0px;
+     width: 100%;
+     top: 80%;
+
+}
+.bike{
+    height: 50px;
+    width:50px ;
+    margin-top: 50px ;
+    position: absolute;
+    animation-name: drives;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    /* animation-delay: 2s; */
+    animation-timing-function: ease-in-out;
+    
+}
+.bike1{
+    height: 50px;
+    width:50px ;
+    margin-top: 50px ;
+    position: absolute;
+    animation-name: drivesone;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+    /* animation-delay: 2s; */
+    animation-timing-function: ease-in-out;
+    
+}
+@keyframes drives{
+    0%{transform: translateX(-200px);
+
+    }
+    /* 50%{
+        transform: translateX(600px);
+    } */
+
+    100%{
+        /* margin-top:120px; */
+        transform: translateX(1400px);
+    }
+    
+}
+@keyframes drivesone{
+    0%{transform: translateX(-200px);
+        /* margin-top: 140px; */
+
+    }
+   
+    100%{
+        /* margin-top:140px; */
+        transform: translateX(1400px);
+    }
+    
+}
+
+
